@@ -36,8 +36,8 @@ export default {
         loginUser: function () {
             this.submitted = true;
             const { username, password } = this;
-            if ((username === "123" || username === "abc") && password) {
-                router.push({ name: 'helloworld', params: { username }  });
+            if ((username === "candidate@screel.in" || username === "recruiter@screel.in") && password) {
+                router.push({ name: 'cadrec', params: { username }  });
             }
     }
     }
