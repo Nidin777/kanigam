@@ -34,6 +34,10 @@ export default {
     },
     methods: {
         loginUser: function () {
+            let uri = 'http://localhost:8000/jobs';
+            this.axios.get(uri).then((response) => {
+                console.log(response.data)
+            });
             this.submitted = true;
             const { username, password } = this;
             if ((username === "candidate@screel.in" || username === "recruiter@screel.in") && password) {
