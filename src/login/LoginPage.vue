@@ -34,14 +34,14 @@ export default {
     },
     methods: {
         loginUser: function () {
-            let uri = 'http://localhost:8000/jobs';
+            let uri = 'https://localhost:8000/jobs';
             this.axios.get(uri).then((response) => {
                 console.log(response.data)
             });
             this.submitted = true;
             const { username, password } = this;
             if ((username === "candidate@screel.in" || username === "recruiter@screel.in") && password) {
-                router.push({ name: 'cadrec', params: { username }  });
+                router.push({ name: 'cadRec', params: { username }  });
             }
     }
     }

@@ -10,8 +10,8 @@
                 <input type="text" v-model="job.experience" v-validate="'required'" name="experience" class="form-control" />
             </div>
             <div class="form-group">
-                <label for="jobDescription">Job Description</label>
-                <input type="text" v-model="job.jobDescription" v-validate="'required'" name="jobDescription" class="form-control" />
+                <label for="jobdescription">Job Description</label>
+                <input type="text" v-model="job.jobdescription" v-validate="'required'" name="jobdescription" class="form-control" />
             </div>
             <div class="form-group">
                 <label htmlFor="skills">Skills</label>
@@ -33,7 +33,7 @@ export default {
                 role: '',
                 experience: '',
                 skills: '',
-                jobDescription: ''
+                jobdescription: ''
             },
             submitted: false
         }
@@ -43,7 +43,7 @@ export default {
             this.submitted = true;
             this.axios({
                       method: 'post',
-                      url: 'https://localhost:8000/addjob',
+                      url: 'http://localhost:8000/addjob',
                          data: this.job
 });
         }
