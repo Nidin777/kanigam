@@ -11,7 +11,7 @@ export const router = new Router({
   mode: 'history',
   routes: [
     { path: '/', component: LoginPage },
-    { path: '/cadrec', name: 'cadrec', component: cadRec, props: true },
+    { path: '/cadrec', name: 'cadRec', component: cadRec, props: true },
     { path:  '/createjob', component: createJob},
     // otherwise redirect to home
     { path: '*', redirect: '/' }
