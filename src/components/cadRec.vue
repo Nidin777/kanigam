@@ -57,10 +57,10 @@ export default {
       router.push({ path: "createjob" });
     },
     update() {
-      router.push({ path: "createjob" });
+      router.push({ path: "updatejob" });
     },
     remove() {
-      router.push({ path: "createjob" });
+      router.push({ path: "removejob" });
     },
   },
   props: {
